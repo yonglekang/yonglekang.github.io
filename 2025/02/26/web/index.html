@@ -193,7 +193,7 @@
   const ipt = document.querySelector('#search-input')
   const btn = document.querySelector('#search-btn')
   const layer = document.querySelector('#search-layer')
-  const posts = JSON.parse(`[{"title":"welcome to my blog","path":"2025/02/16/hello-world/"},{"title":"web","path":"2025/02/26/web/"},{"title":"picture","path":"2025/03/04/picture/"}]`)
+  const posts = JSON.parse(`[{"title":"welcome to my blog","path":"2025/02/16/hello-world/"},{"title":"web","path":"2025/02/26/web/"}]`)
   ipt.addEventListener('keyup', e => {
     if (e.key === 'Enter') {
       handleSearch()
@@ -270,7 +270,7 @@
         </a>
         <a href="/archives">
           <div>
-            <span>2 </span>
+            <span>1 </span>
             <span>归档</span>
           </div>
         </a>
@@ -327,7 +327,7 @@
       </h5>
       <p class="main-left--subtitle">
         <span>文章数目：</span>
-        <span>3 篇</span>
+        <span>2 篇</span>
       </p>
       <p class="main-left--subtitle">
         <span>最近动态：</span>
@@ -373,7 +373,9 @@
       </div>
     </div>
     <article class="article-content markdown-body">
-      <p>！<a href="image/E:%5CMyblog%5Csource%5Cimage"></a></p>
+      <p>关于：view_source的wp<br><img src="/picture/0.png"><br>通过右键能不够查看源码，这时可以通过按F12或者CTRL+U来查看源码，这样就可以得到flag<br><img src="/picture/1.png"></p>
+<p>关于：robots的wp<br>有标题可知这是一道考察robots，因为robots.txt 文件常常被用作隐藏敏感信息或隐藏特定页面的线索，所以同过添加后缀就可以得到flag<br><img src="/picture/2.png"></p>
+<p>关于：backup的wp<br>根据提示控制，要通过php的备份文件进入<br>通过尝试可知通过index.php.bak就可以获得一个文件，打开后就获得了flag<br><img src="/picture/3.png"><br><img src="/picture/4.png"></p>
 
     </article>
     
@@ -399,11 +401,6 @@
       </div>
       
         <div class="catelogue catelogue-2">
-          
-            <p>
-              <span>上一篇：</span>
-              <a href="/2025/03/04/picture/">picture</a>
-            </p>
            
           
             <p>
